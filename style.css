@@ -1,3 +1,32 @@
+/*Basics*/
+
+body {
+    background-color: #A28C1C ;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
 /* Navbar */
 
 .navbar-nav {
@@ -5,7 +34,9 @@
     font-size: 20px;
 }
 
-/* Title */
+
+
+/* Website Title */
 
 header {
     text-align: center;
@@ -27,5 +58,48 @@ header {
   }
 }
     font-size: 100px;
+}
+
+/*Search Bar*/
+  
+.searchbar{
+  box-sizing: border-box;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Style the searchbar */
+form.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Submit button */
+form.searchbar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #cd3545;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.searchbar button:hover {
+  background: #0b7dda;
+}
+
+form.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 

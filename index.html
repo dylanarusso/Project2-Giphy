@@ -2,8 +2,6 @@
 <html lang="en_US">
     <head>
         <title>What Do You GIF?</title>
-        
-        <link rel="stylesheet" href="style.css" />
 
         <!--Bootstrap ref-->
         <meta charset="utf-8">
@@ -20,7 +18,10 @@
         <!--Tailwind-->
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
+        <!--Search Bar Submit Logo-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
@@ -34,26 +35,35 @@
             
             <!-- Links -->
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Categories </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us </a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us </a>
+                </li>
             </ul>
-          </nav>
+        </nav>
          
         <!--Website Title-->
-          <header>
+        <header>
               <h1 class="animate-pulse">What Do You GIF?</h1>
-          </header>
-
-          <!--Search Bar-->
-
+        </header>
           
+        <main>
+
+        <!--Search Bar-->
+
+        <form class="searchbar" action="action_page.php">
+            <input type="text" placeholder="What GIF Are You Looking For?" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+        </main>
+
+
 
         <!--jQuery ref-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"
