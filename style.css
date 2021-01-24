@@ -117,8 +117,46 @@ form.searchbar::after {
   display: table;
 }
 
-/* About Us */
+/* Categories Grid */
 
-.aboutusHeader {
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Footer */
+
+footer {
   font-family: 'Texturina', serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.owner {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+footer img {
+  width: auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
