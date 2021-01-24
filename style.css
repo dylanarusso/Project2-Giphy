@@ -1,6 +1,31 @@
-/* Navbar*/
+/* Navbar */
 
 .navbar-nav {
     font-family: 'Texturina', serif;
     font-size: 20px;
 }
+
+/* Title */
+
+header {
+    text-align: center;
+    font-family: 'Texturina', serif;
+    font-size: large;
+    color: white;
+    background-image: url(img/lights.header.jpg);
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+    font-size: 100px;
+}
+
