@@ -4,6 +4,20 @@ body {
     background-color: #A28C1C ;
 }
 
+h1 {
+  font-family: 'Texturina', serif;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  margin: 30px;
+}
+
+p {
+  font-family: 'Texturina', serif;
+  color: white;
+}
+
+
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -103,3 +117,8 @@ form.searchbar::after {
   display: table;
 }
 
+/* About Us */
+
+.aboutusHeader {
+  font-family: 'Texturina', serif;
+}
